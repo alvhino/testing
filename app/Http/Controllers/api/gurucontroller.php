@@ -8,7 +8,7 @@ use App\Models\guru;
 
 class gurucontroller extends Controller
 {
-    public function indexguru() {
+    public function allguru() {
         $guru = guru::all();
 
         return response()->json($guru);
@@ -25,7 +25,7 @@ class gurucontroller extends Controller
         ]);
 
         return response()->json([
-            "pesan" => "Berhasil menambah guru"
+            "pesan" => "Berhasil tambah guru"
         ]);
     }
 
